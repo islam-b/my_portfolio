@@ -1,5 +1,9 @@
 @import '../mixins.scss';
 
+.header-container {
+  background-color: $bg;
+}
+
 .menu-item {
     display: flex;
     flex-direction: column;
