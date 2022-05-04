@@ -1,0 +1,22 @@
+@import '../mixins.scss';
+
+.banner-container {
+    height: 100vh;
+    align-items: center;
+}
+
+.whois {
+    text-transform: uppercase;
+    color: $gray-2;
+    font-weight: bold;
+}
+
+.fullname { 
+    text-transform: uppercase; 
+    font-weight: bold; 
+    font-size: 3rem;
+}
+
+.text {
+    color: $gray-3;
+}
