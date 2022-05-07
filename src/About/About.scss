@@ -2,27 +2,10 @@
 
 
 .about-container {
-    min-height: 100vh;
+    
 }
 
-.horizontal-line {
-    text-align: center;
 
-    .top {
-        background-color: $gray-2;
-        height: 2px;
-        margin: 0 auto;
-        margin-bottom: 3px;
-        width: 44px;
-    }
-
-    .bottom {
-        background-color: $gray-2;
-        height: 2px;
-        margin: 0 auto;
-        width: 77px;
-    }
-}
 
 .my-name {
     font-family: "Yellowtail";

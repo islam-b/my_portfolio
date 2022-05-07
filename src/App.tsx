@@ -4,6 +4,8 @@ import './App.scss';
 import { Header } from './Header/Header';
 import { Main } from './Main/Main';
 import { About } from './About/About';
+import { MyServices } from './MyServices/MyServices';
+import { MyProjects } from './MyProjects/MyProjects';
 
 function App() {
   return (
@@ -11,6 +13,8 @@ function App() {
       <Header/>
       <Main/>
       <About/>
+      <MyServices/>
+      <MyProjects/>
     </div>
   );
 }

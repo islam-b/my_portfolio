@@ -1,0 +1,31 @@
+@import '../mixins.scss';
+
+.title {
+
+    overflow: hidden;
+    position: relative;
+    font-size: 0.8rem;
+    text-align: center;
+    z-index: 2;
+    color: transparent;
+    transition: color 150ms ease-in-out 200ms;
+    span {
+        display: block;
+        background: #000;
+        width: 100%; 
+        position: absolute;
+        right: 100%;
+        top: 0;
+        bottom: 0;
+        transition: right 600ms ease-in-out 0s;
+    }
+    &:hover {
+        color: black; 
+        span {
+            right: -100%;
+        }
+    }
+}
+
+ 
+ 

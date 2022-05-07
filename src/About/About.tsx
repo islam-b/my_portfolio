@@ -24,12 +24,12 @@ export const About = () => {
             On the other hand, we denounce with righteous indignation and dislike men who are so beguiled and demoralized by th charms of pleasure of the moment, so blinded by desire, tht they cannot foresee the pain and trouble that are
         </p>
 
-        <button type="button" className="btn btn-dark my-2 ">
+        <button type="button" className="btn btn-dark my-3 ">
             <div className="px-2">Download CV</div>
         </button>
 
-        <div className="my-4 row w-100">
-            <div className="col-md-6 p-4 d-flex flex-column align-items-center">
+        <div className="mt-4 row w-100">
+            <div className="col-md-6 px-4 d-flex flex-column align-items-center">
                 <div style={{ width: '100%', maxWidth: '400px' }}>
                     <Skill label="HTML / CSS /JS" percentage={90} />
                 </div>
@@ -40,7 +40,7 @@ export const About = () => {
                     <Skill label="Angular / ReactJS" percentage={80} />
                 </div>
             </div>
-            <div className="col-md-6 p-4 d-flex flex-column align-items-center">
+            <div className="col-md-6 px-4 d-flex flex-column align-items-center">
                 <div style={{ width: '100%', maxWidth: '400px' }}>
                     <Skill label="React Native (Mobile)" percentage={80} />
                 </div>
