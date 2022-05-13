@@ -3,22 +3,24 @@
 .title {
     overflow: hidden;
     position: absolute;
-    top:32px;
-    right: 32px; 
+    top: 32px;
+    right: 32px;
     text-align: center;
     z-index: 8;
     color: transparent;
-    transition: color 150ms ease-in-out 200ms; 
+    transition: color 150ms ease-in-out 200ms;
+
     span {
         display: block;
         background: white;
-        width: 100%; 
+        width: 100%;
         position: absolute;
         right: -100%;
         top: 0;
         bottom: 0;
         transition: right 600ms ease-in-out 0s;
     }
+
     // &:hover {
     //     color: black; 
     //     span {
@@ -30,48 +32,57 @@
 .subtitle {
     overflow: hidden;
     position: absolute;
-    top:64px;
-    right: 32px; 
+    top: 64px;
+    right: 32px;
     text-align: center;
     z-index: 8;
     color: transparent;
-    transition: color 150ms ease-in-out 200ms; 
+    transition: color 150ms ease-in-out 200ms;
+
     span {
         display: block;
         background: white;
-        width: 100%; 
+        width: 100%;
         position: absolute;
         right: 100%;
         top: 0;
         bottom: 0;
         transition: right 600ms ease-in-out 0s;
-    } 
+    }
 }
 
 .project-preview-container {
     position: relative;
+
     .project-preview {
         transition: all;
-    transition-timing-function: cubic-bezier();
-    transition-duration: 250ms;
+        transition-timing-function: cubic-bezier();
+        transition-duration: 250ms;
     }
+
     &:hover {
         cursor: pointer;
+
         .project-preview {
             transform: scale(1.1);
         }
+
         .title {
-            color: white; 
+            color: white;
+
             span {
                 right: 100%;
             }
         }
+
         .subtitle {
-            color: $gray-1; 
+            color: $gray-1;
+
             span {
                 right: -100%;
             }
         }
+
         &::before {
             transform: scale(1);
             opacity: 1
@@ -97,4 +108,31 @@
     transition-duration: 250ms;
     transition-delay: 150ms;
 }
- 
+
+
+.list-inline {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.list-inline-item {
+    padding: 4px 12px;
+    margin: 4px 8px;
+    transition: all;
+    transition-timing-function: ease-in-out();
+    transition-duration: 500ms;
+    &:hover {
+        cursor: pointer;
+        background-color: black;
+        border-radius: 6px;
+        color: white !important;
+    }
+}
+
+.list-inline-item.active {
+    background-color: black;
+    border-radius: 6px;
+    color: white !important;
+}

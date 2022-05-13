@@ -10,7 +10,8 @@ import { MyProjects } from './MyProjects/MyProjects';
 function App() {
   return (
     <div >
-      <Header/>
+      <Header/> 
+      <div className='my-5'></div>
       <Main/>
       <About/>
       <MyServices/>

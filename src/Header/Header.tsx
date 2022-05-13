@@ -1,11 +1,27 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import './Header.scss'
 
 export const Header = () => {
-    return <div className=' header-container'>
-        <div className="px-5"> 
-            <header className="container px-5 p-4" >
-                <nav className="navbar navbar-expand-lg navbar-light">
+
+    let [paddingVertical, setVerticalPadding] = useState(14)
+    let [headerShadow, setHeaderShadow] = useState(false)
+
+    useEffect(() => {
+        window.addEventListener('scroll', handleScroll);
+    }, [])
+
+
+    const handleScroll = (event: any) => {
+        let padding = window.scrollY > 40 ? 0 : 14
+        console.log(padding)
+        setVerticalPadding(padding) 
+        setHeaderShadow(window.scrollY > 40)
+    }
+
+    return <div className='header-container animated' style={{boxShadow: headerShadow ? '0px 0px 10px #aeaeae' : 'none'}}>
+        <div className="px-5">
+            <header className="container animated px-5 " style={{ paddingBottom: paddingVertical, paddingTop: paddingVertical }} >
+                <nav className="navbar  navbar-expand-lg navbar-light">
                     <a className="navbar-brand" href="#"><strong> Mim. </strong></a>
                     <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                         <span className="navbar-toggler-icon"></span>
@@ -42,3 +58,5 @@ export const Header = () => {
         </div>
     </div>
 }
+
+

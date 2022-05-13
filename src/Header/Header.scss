@@ -1,7 +1,18 @@
 @import '../mixins.scss';
 
 .header-container {
-  background-color: $bg;
+    background-color: $bg;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    z-index: 10; 
+}
+
+.animated {
+    transition: all;
+    transition-duration: 500ms;
+    transition-timing-function: cubic-bezier();
 }
 
 .menu-item {
@@ -16,7 +27,8 @@
 }
 
 .menu-icon {
-    font-weight: bolder; 
+    font-weight: bolder;
+
     :hover {
         color: $gray-1 !important;
     }

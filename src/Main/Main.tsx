@@ -13,7 +13,7 @@ export const Main = () => {
                         <div className="px-3">My work </div>
                     </button>
                 </div>
-                <div className="col-md-6 px-5 text-center">
+                <div className="col-md-6 pt-5 px-5 text-center">
                     <img className="mt-3" style={{ height: '100%' }} src="assets/layer1.png" />
                 </div>
             </div>
