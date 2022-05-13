@@ -76,22 +76,9 @@ export const MyProjects = () => {
                     </div>
                 </div>
 
-            </div>
-
-
-            <div>
-
-            </div>
-
-
-
-
-
+            </div> 
         </div >
 
-        <div className="p-5">
-            <div className="p-5">
-            </div>
-        </div>
+         
     </>
 }

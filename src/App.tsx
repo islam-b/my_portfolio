@@ -6,6 +6,7 @@ import { Main } from './Main/Main';
 import { About } from './About/About';
 import { MyServices } from './MyServices/MyServices';
 import { MyProjects } from './MyProjects/MyProjects';
+import { Certifications } from './Certifications/Certifications';
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
       <About/>
       <MyServices/>
       <MyProjects/>
+      <Certifications/>
     </div>
   );
 }
