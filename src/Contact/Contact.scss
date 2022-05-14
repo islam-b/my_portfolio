@@ -1,0 +1,16 @@
+@import '../mixins.scss';
+
+
+ 
+.contact-icon {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: $gray-2;
+    border: solid 1px $gray-2;
+    border-radius: 40px;
+    width: 40px;
+    height: 40px;
+
+}
