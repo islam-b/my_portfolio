@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import logo from './logo.svg';
 import './App.scss';
 import { Header } from './Header/Header';
@@ -9,7 +9,8 @@ import { MyProjects } from './MyProjects/MyProjects';
 import { Certifications } from './Certifications/Certifications';
 import { Contact } from './Contact/Contact';
 
-function App() {
+function App() { 
+  
   return (
     <div >
       <Header/> 

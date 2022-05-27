@@ -1,7 +1,32 @@
-import React from 'react';
+import { Formik } from 'formik';
+import React, { useEffect, useRef } from 'react';
+import { EmailJs } from '../EmailJs';
 import './Contact.scss'
 
+const initialValues = {
+    fullName: '',
+    email: '',
+    content: ''
+}
+
 export const Contact = () => {
+
+    useEffect(() => {
+        EmailJs.init()
+    }, [])
+
+    let onSubmit = ({ fullName, email, content }: any) => {
+        EmailJs.send(fullName, email, content).then((res) => {
+            console.log(res);
+            (formikRef?.current as any)?.resetForm()
+        }).catch(error => {
+            console.log(error)
+        })
+    }
+
+    const formikRef = useRef<any>();
+
+
     return <>
         <div className="container p-5">
 
@@ -52,30 +77,60 @@ export const Contact = () => {
 
                 </div>
                 <div className="col-md-6 p-4">
-                    <div className="row">
-                        <div className="col-lg-6 p-2">
-                            <label>Full name</label>
-                            <input type="text" className="form-control" placeholder="Your name" />
+                    <Formik innerRef={formikRef} initialValues={initialValues} onSubmit={onSubmit}>
 
-                        </div>
-                        <div className="col-lg-6 p-2">
-                            <label>Email</label>
-                            <input type="text" className="form-control" placeholder="Your email" />
-                        </div>
-                    </div>
-                    <div className="row">
-                        <div className="col-12 p-2">
-                            <label>Message</label>
-                            <textarea className="form-control" placeholder="Your message" style={{ height: '100px' }}></textarea>
-                        </div>
-                    </div>
-                    <div className="row">
-                        <div className="col-12 p-2">
-                            <button type="button" className="btn btn-dark my-3 ">
-                                <div className="px-2">SEND MESSAGE</div>
-                            </button>
-                        </div>
-                    </div>
+                        {({ values,
+                            errors,
+                            touched,
+                            handleChange,
+                            handleBlur,
+                            handleSubmit,
+                            isSubmitting }) => (<>
+                                <form onSubmit={handleSubmit}>
+                                    <div className="row">
+                                        <div className="col-lg-6 p-2">
+                                            <label>Full name</label>
+                                            <input type="text" className="form-control"
+                                                name="fullName"
+                                                onChange={handleChange}
+                                                onBlur={handleBlur}
+                                                value={values.fullName}
+                                                placeholder="Your name" />
+
+                                        </div>
+                                        <div className="col-lg-6 p-2">
+                                            <label>Email</label>
+                                            <input type="email"
+                                                name="email"
+                                                onChange={handleChange}
+                                                onBlur={handleBlur}
+                                                value={values.email}
+                                                className="form-control" placeholder="Your email" />
+                                        </div>
+                                    </div>
+                                    <div className="row">
+                                        <div className="col-12 p-2">
+                                            <label>Message</label>
+                                            <textarea className="form-control"
+                                                name="content"
+                                                onChange={handleChange}
+                                                onBlur={handleBlur}
+                                                value={values.content}
+                                                placeholder="Your message" style={{ height: '100px' }}></textarea>
+                                        </div>
+                                    </div>
+                                    <div className="row">
+                                        <div className="col-12 p-2">
+                                            <button type="submit" disabled={isSubmitting} className="btn btn-dark my-3 ">
+                                                <div className="px-2">SEND MESSAGE</div>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </form>
+
+                            </>)}
+                    </Formik>
+
                 </div>
             </div>
         </div>
