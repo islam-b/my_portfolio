@@ -3,7 +3,7 @@ import './MyProjects.scss'
 
 export const MyProjects = () => {
     return <>
-        <div className="p-5 d-flex flex-column align-items-center justify-content-start">
+        <div className="my-projects p-5 d-flex flex-column align-items-center justify-content-start">
 
             <h2 className="my-3" style={{ fontWeight: 'bold' }}>MY PROJECTS</h2>
             <div className="mb-4 horizontal-line">
@@ -30,7 +30,7 @@ export const MyProjects = () => {
                     <div className="my-4 row w-100">
                         <div className="col-md-6 col-xl-4 p-4">
                             <div style={{ borderRadius: '4px', overflow: 'hidden' }} className="project-preview-container w-100">
-                                <div className="project-preview" style={{ backgroundPosition: 'center', backgroundSize: 'cover', width: '100%', height: '300px', backgroundImage: 'url(assets/image1.jpeg)' }}>
+                                <div className="project-preview" style={{ backgroundPosition: 'center', backgroundSize: 'cover', width: '100%', height: '300px', backgroundImage: 'url(/assets/image1.jpeg)' }}>
 
                                 </div>
                                 <h5 className="title">
@@ -45,7 +45,7 @@ export const MyProjects = () => {
                         </div>
                         <div className="col-md-6 col-xl-4 p-4">
                             <div style={{ borderRadius: '4px', overflow: 'hidden' }} className="project-preview-container w-100">
-                                <div className="project-preview" style={{ backgroundPosition: 'center', backgroundSize: 'cover', width: '100%', height: '300px', backgroundImage: 'url(assets/image2.png)' }}>
+                                <div className="project-preview" style={{ backgroundPosition: 'center', backgroundSize: 'cover', width: '100%', height: '300px', backgroundImage: 'url(/assets/image2.png)' }}>
 
                                 </div>
                                 <h5 className="title">
@@ -60,7 +60,7 @@ export const MyProjects = () => {
                         </div>
                         <div className="col-md-6 col-xl-4 p-4">
                             <div style={{ borderRadius: '4px', overflow: 'hidden' }} className="project-preview-container w-100">
-                                <div className="project-preview" style={{ backgroundPosition: 'center', backgroundSize: 'cover', width: '100%', height: '300px', backgroundImage: 'url(assets/image1.jpeg)' }}>
+                                <div className="project-preview" style={{ backgroundPosition: 'center', backgroundSize: 'cover', width: '100%', height: '300px', backgroundImage: 'url(/assets/image1.jpeg)' }}>
 
                                 </div>
                                 <h5 className="title">

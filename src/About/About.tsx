@@ -9,19 +9,27 @@ export const About = () => {
             <div className="bottom"></div>
         </div>
         <ul className="my-4 list-inline text-center about-work">
-            <li className="list-inline-item mr-0 text-muted">Software Engineer</li>
+            <li className="list-inline-item mr-0 text-muted">Web Fullstack developer</li>
             <li className="list-inline-item mr-0 text-muted"><span>&#8226;</span></li>
-            <li className="list-inline-item mr-0 text-muted">Web/Mobile developer</li>
+            <li className="list-inline-item mr-0 text-muted">Mobile developer</li>
             <li className="list-inline-item mr-0 text-muted"><span>&#8226;</span></li>
             <li className="list-inline-item mr-0 text-muted">UX/UI Designer</li>
         </ul>
 
         <div className="my-name my-3">
-            A. Jordan
+            B.M. Islam
         </div>
 
         <p className="my-3" style={{ maxWidth: '700px', textAlign: 'center' }}>
-            On the other hand, we denounce with righteous indignation and dislike men who are so beguiled and demoralized by th charms of pleasure of the moment, so blinded by desire, tht they cannot foresee the pain and trouble that are
+            Graduate engineer in the field of computer science, specializing in
+            computer systems and
+            software development, skillful
+            with all the stages of the development
+            cycle of an IT project. Autonomous and
+            able to operate effectively
+            within a productive team.
+
+
         </p>
 
         <button type="button" className="btn btn-dark my-3 ">

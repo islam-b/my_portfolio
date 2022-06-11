@@ -48,3 +48,9 @@
 .menu-item:hover::after {
     width: 100%;
 }
+
+.nav-link {
+    &:hover {
+        cursor: pointer;
+    }
+}

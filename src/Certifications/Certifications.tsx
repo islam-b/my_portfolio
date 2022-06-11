@@ -15,7 +15,7 @@ export const Certifications = () => {
                         <div className="col-md-6 col-lg-4 ">
                             <div className="single-certification m-3 ">
 
-                                <div style={{ flex: 1, backgroundPosition: 'center', backgroundSize: 'cover', width: '100%', height: '300px', backgroundImage: 'url(assets/AAD.png)' }}>
+                                <div style={{ flex: 1, backgroundPosition: 'center', backgroundSize: 'cover', width: '100%', height: '300px', backgroundImage: 'url(/assets/AAD.png)' }}>
 
                                 </div>
 

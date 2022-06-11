@@ -12,25 +12,11 @@ export const MyServices = () => {
             <div className="container">
                 <div className="w-100 px-4">
                     <div className="my-4 w-100 row justify-content-center align-items-stretch">
+                        
                         <div className="col-md-6 col-lg-3 ">
                             <div className="single-service m-3 p-3">
                                 <div className="my-2 icon-container">
-                                    <img src="assets/ui.png" />
-                                </div>
-                                <h6 className="my-2">UX/UI Design</h6>
-                                <div className="my-2 horizontal-line">
-                                    <div className="top"></div>
-                                </div>
-                                <div className="my-2 service-text" >
-                                    There are many variatio
-                                    ns of pssages of Lorm available, bu in some form,
-                                </div>
-                            </div>
-                        </div>
-                        <div className="col-md-6 col-lg-3 ">
-                            <div className="single-service m-3 p-3">
-                                <div className="my-2 icon-container">
-                                    <img src="assets/web.png" />
+                                    <img src="/assets/web.png" />
                                 </div>
                                 <h6 className="my-2">Frontend development</h6>
                                 <div className="my-2 horizontal-line">
@@ -45,7 +31,7 @@ export const MyServices = () => {
                         <div className="col-md-6 col-lg-3 ">
                             <div className="single-service m-3 p-3">
                                 <div className="my-2 icon-container">
-                                    <img src="assets/backend.png" />
+                                    <img src="/assets/backend.png" />
                                 </div>
                                 <h6 className="my-2">Backend development</h6>
                                 <div className="my-2 horizontal-line">
@@ -60,7 +46,7 @@ export const MyServices = () => {
                         <div className="col-md-6 col-lg-3 ">
                             <div className="single-service m-3 p-3">
                                 <div className="my-2 icon-container">
-                                    <img src="assets/mobile.png" />
+                                    <img src="/assets/mobile.png" />
                                 </div>
                                 <h6 className="my-2">Mobile development</h6>
                                 <div className="my-2 horizontal-line">
@@ -72,6 +58,21 @@ export const MyServices = () => {
                                 </div>
                             </div>
                         </div> 
+                        <div className="col-md-6 col-lg-3 ">
+                            <div className="single-service m-3 p-3">
+                                <div className="my-2 icon-container">
+                                    <img src="/assets/ui.png" />
+                                </div>
+                                <h6 className="my-2">UX/UI Design</h6>
+                                <div className="my-2 horizontal-line">
+                                    <div className="top"></div>
+                                </div>
+                                <div className="my-2 service-text" >
+                                    There are many variatio
+                                    ns of pssages of Lorm available, bu in some form,
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
 
