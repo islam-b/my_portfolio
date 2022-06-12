@@ -1,5 +1,5 @@
 import React, { useCallback, useEffect, useState } from 'react';
-import { useNavigate } from 'react-router-dom';
+import { matchPath, useLocation, useNavigate } from 'react-router-dom';
 import './Header.scss'
 
 export const Header = () => {
@@ -62,9 +62,13 @@ export const Header = () => {
 
 const Link = (props: { name: string, to: string }) => {
     let nav = useNavigate()
+    const { pathname } = useLocation();
     let navigate = useCallback(() => {
+        if (matchPath({ path: props.to }, pathname)) {
+            return
+        }
         nav(props.to)
-    }, [])
+    }, [pathname])
     return <>
         <a onClick={navigate} className="nav-link"  >{props.name} </a>
     </>
