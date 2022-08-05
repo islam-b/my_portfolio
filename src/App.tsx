@@ -9,8 +9,10 @@ import { MyProjects } from './MyProjects/MyProjects';
 import { Certifications } from './Certifications/Certifications';
 import { Contact } from './Contact/Contact';
 import { EducationAndExperience } from './EducationAndExperience/EducationAndExperience';
-import { Navigate, Route, Routes, useNavigate } from 'react-router-dom';
+import { BrowserRouter, Navigate, Route, Routes, useLocation, useNavigate } from 'react-router-dom';
 import { MyParking } from './MyProjects/MyParking/MyParking';
+import { Sgs } from './MyProjects/Sgs/Sgs';
+import ReactTooltip from 'react-tooltip';
 
 function App() {
 
@@ -18,12 +20,15 @@ function App() {
     <div >
       <Header />
       <div className='my-5'></div>
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/projects/my-parking" element={<MyParking />} />
-        <Route path="*" element={<Redirect to="/" />} />
-      </Routes>
-
+      <ScrollToTop>
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/projects/my-parking" element={<MyParking />} />
+          <Route path="/projects/sgs" element={<Sgs />} />
+          <Route path="*" element={<Redirect to="/" />} />
+        </Routes>
+      </ScrollToTop>
+      <ReactTooltip />
     </div>
   );
 }
@@ -39,6 +44,17 @@ const Home = () => {
     <Contact />
   </>
 }
+
+function ScrollToTop({ children }: any) {
+  const { pathname } = useLocation();
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [pathname]);
+
+  return <>{children}</>;
+}
+
 
 const Redirect = ({ to }: { to: string }) => {
 

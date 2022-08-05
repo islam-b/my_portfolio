@@ -68,15 +68,22 @@ export const MyParking = () => {
             </div>
 
             <div className="row">
+                <div className="col-12b-4 mb-lg-0">
+                <img
+                        src="/assets/projects/sgs/main.png"
+                        className="w-100 shadow-1-strong rounded mb-4"
+                        alt="Boat on Calm Water"
+                    />
+                </div>
                 <div className="col-lg-6 col-md-12 mb-4 mb-lg-0">
                     <img
-                        src="https://mdbcdn.b-cdn.net/img/Photos/Horizontal/Nature/4-col/img%20(73).webp"
+                        src="/assets/projects/sgs/1.png"
                         className="w-100 shadow-1-strong rounded mb-4"
                         alt="Boat on Calm Water"
                     />
 
                     <img
-                        src="https://mdbcdn.b-cdn.net/img/Photos/Vertical/mountain1.webp"
+                        src="/assets/projects/sgs/3.png"
                         className="w-100 shadow-1-strong rounded mb-4"
                         alt="Wintry Mountain Landscape"
                     />
@@ -84,16 +91,12 @@ export const MyParking = () => {
 
                 <div className="col-lg-6 mb-4 mb-lg-0">
                     <img
-                        src="https://mdbcdn.b-cdn.net/img/Photos/Vertical/mountain2.webp"
+                        src="/assets/projects/sgs/2.png"
                         className="w-100 shadow-1-strong rounded mb-4"
                         alt="Mountains in the Clouds"
                     />
 
-                    <img
-                        src="https://mdbcdn.b-cdn.net/img/Photos/Horizontal/Nature/4-col/img%20(73).webp"
-                        className="w-100 shadow-1-strong rounded mb-4"
-                        alt="Boat on Calm Water"
-                    />
+                     
                 </div>
  
             </div>

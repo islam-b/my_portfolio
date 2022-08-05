@@ -8,19 +8,23 @@
         min-height: 100%;
         width: 0px !important;
         border:solid 1px $gray-1;
+        top: 52px;
+    }
+    .dot-container {
+        position: relative;
+        min-height: 100%; 
+        top: 52px;
     }
     .container {
         height: 100%;
     }
     .content {
-        border:solid 1px $gray-1;
-        border-radius: 4px; 
         min-height: 160px;
     }
     .dot {
         position: absolute;
         width: 16px;
-        top: 40px;
+        top: -8px;
         height: 16px;
         z-index: 2;
         margin-left: -8px;
