@@ -13,6 +13,7 @@ import { BrowserRouter, Navigate, Route, Routes, useLocation, useNavigate } from
 import { MyParking } from './MyProjects/MyParking/MyParking';
 import { Sgs } from './MyProjects/Sgs/Sgs';
 import ReactTooltip from 'react-tooltip';
+import { Toyota } from './MyProjects/Toyota/Toyota';
 
 function App() {
 
@@ -23,6 +24,7 @@ function App() {
       <ScrollToTop>
         <Routes>
           <Route path="/" element={<Home />} />
+          <Route path="/projects/toyota-b2c" element={<Toyota />} />
           <Route path="/projects/my-parking" element={<MyParking />} />
           <Route path="/projects/sgs" element={<Sgs />} />
           <Route path="*" element={<Redirect to="/" />} />

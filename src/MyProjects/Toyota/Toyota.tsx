@@ -4,13 +4,13 @@ import { useLocation } from 'react-router-dom';
 import '../MyProjects.scss'
 
 
-export const MyParking = () => {
+export const Toyota = () => {
     return <div >
 
         <div className="container px-5">
             <div style={{ marginTop: '200px' }}></div>
             <div className="mt-4">
-                <h3 className=" px-2"> MyParking (Parking Guidance App)
+                <h3 className=" px-2"> Toyota (B2C App)
                 </h3>
             </div>
             <div className="row w-100">
@@ -27,17 +27,15 @@ export const MyParking = () => {
                         ns of pssages of Lorm available, bu in some form,
                     </p>
 
-
                     <h6>
                         <strong> Tech Stack </strong>
                     </h6>
                     <div className='stack'>
 
-                        <img data-tip="Android" data-place='bottom' data-effect="solid" className='tech' src='/assets/tech/android.png' />
-                        <img data-tip="Kotlin" data-place='bottom' data-effect="solid" className='tech' src='/assets/tech/kotlin.png' />
-                        <img data-tip="Django" data-place='bottom' data-effect="solid" className='tech' src='/assets/tech/django.png' />
-                        <img data-tip="MongoDB" data-place='bottom' data-effect="solid" className='tech' src='/assets/tech/mongodb.png' />
-                        <img data-tip="here API" data-place='bottom' data-effect="solid" className='tech' src='/assets/tech/here.png' />
+                        <img data-tip="Angular" data-place='bottom' data-effect="solid" className='tech' src='/assets/tech/angular.png' />
+                        <img data-tip="React Native" data-place='bottom' data-effect="solid" className='tech' src='/assets/tech/react-native.png' />
+                        <img data-tip=".NET Core" data-place='bottom' data-effect="solid" className='tech' src='/assets/tech/dotnet.png' />
+                        <img data-tip="MySQL" data-place='bottom' data-effect="solid" className='tech' src='/assets/tech/mysql.png' />
 
                     </div>
 
@@ -51,7 +49,7 @@ export const MyParking = () => {
                             <small>Language: </small>
                         </div>
                         <div className='col-8'>
-                            <strong> French  </strong>
+                            <strong> French / Arabic  </strong>
                         </div>
                     </div>
 
@@ -79,19 +77,15 @@ export const MyParking = () => {
             <div className="row w-100">
                 <div className="col-12 p-4">
                     <h6>
-                        <strong> Clients </strong>
+                        <strong> Client </strong>
                     </h6>
                     <div className="row w-100 mb-5">
                         <div className="col-md-2">
-                            <a className="client" data-tip="ESHRA" data-place='bottom' data-effect="solid" href="https://www.eshra.dz/" target="_blank" rel="noopener noreferrer">
-                                <img className='logo' src='/assets/clients/eshra.png' />
+                            <a className="client" data-tip="Toyota Algeria" data-place='bottom' data-effect="solid" href="https://www.toyotaalgerie.com/" target="_blank" rel="noopener noreferrer">
+                                <img className='logo' src='/assets/clients/toyota.png' />
                             </a>
                         </div>
-                        <div className="col-md-2">
-                            <a className="client" data-tip="ENA" data-place='bottom' data-effect="solid" href="http://www.ena.dz/index.php/fr/" target="_blank" rel="noopener noreferrer">
-                                <img className='logo' src='/assets/clients/ena.png' />
-                            </a>
-                        </div>
+                         
 
                     </div>
 

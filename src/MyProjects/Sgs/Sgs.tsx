@@ -1,7 +1,7 @@
 
 import React, { useEffect } from 'react';
 import { useLocation } from 'react-router-dom';
-import './Sgs.scss'
+import '../MyProjects.scss'
 
 
 export const Sgs = () => {
